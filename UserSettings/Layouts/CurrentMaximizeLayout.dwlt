@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 30686
+  controlID: 31420
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 30687
+  controlID: 31421
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 30672
+  controlID: 31398
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,21 +228,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3c28ffff0c33ffffaa81ffff1cbcffff14c0ffffe4c4ffff5ac5ffff00cbffff
+      m_ExpandedIDs: 3ce4feff6ae4feff98e4feffc6e4fefff4e4feff22e5feff50e5feff7ee5fefface5feffdae5fefff0e8feff72eafeff44ebfeffc2ebfeffeeeffeff3cf0feff7cf0feffbcf0feff0cf1feff46f1feff3cf2feff7ef2feff64f6feff3c28ffffaa81ffff1cbcffff14c0ffffe4c4ffff5ac5ffff00cbffffe2d300008edd000058f50000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Text (TMP)
+        m_OriginalName: Text (TMP)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 54258
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -398,8 +398,8 @@ MonoBehaviour:
     - dockPosition: 0
       containerId: overlay-toolbar__bottom
       floating: 0
-      collapsed: 0
-      displayed: 0
+      collapsed: 1
+      displayed: 1
       snapOffset: {x: -57, y: -45.600006}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
@@ -559,9 +559,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.4213417, y: 1.558769, z: -0.06365128}
+    m_Target: {x: 1.6976771, y: 2.4551811, z: -9.88207}
     speed: 2
-    m_Value: {x: -1.4213417, y: 1.558769, z: -0.06365128}
+    m_Value: {x: 1.6976771, y: 2.4551811, z: -9.88207}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -612,9 +612,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.6110115
+    m_Target: 1.201721
     speed: 2
-    m_Value: 5.6110115
+    m_Value: 1.201721
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -707,22 +707,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/sunnyland woods/Environment/props-sliced
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Sprites/sunnyland woods/Environment/props-sliced
+  - Assets/Scenes
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\buinh\Desktop\MontG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: be8e0000
-    m_LastClickedID: 36542
-    m_ExpandedIDs: 00000000aa890000068a00000e8a0000b88e0000c48e00009e900000c2980000
+    m_SelectedIDs: ac890000
+    m_LastClickedID: 35244
+    m_ExpandedIDs: 00000000aa890000068a00000e8a0000b88e0000c48e00009e900000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -775,10 +775,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 0c33ffff
-    m_LastClickedInstanceID: -52468
+    m_SelectedInstanceIDs: 46f50000
+    m_LastClickedInstanceID: 62790
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000e69500007898000000000000
+    m_ExpandedInstanceIDs: c6230000e69500007898000000000000de980000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -894,7 +894,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -52468
+  m_LastInspectedObjectInstanceID: 62790
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
