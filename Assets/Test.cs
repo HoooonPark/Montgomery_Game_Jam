@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
+    private SpriteRenderer spriteRenderer;
+    private float horizontal;
     public float jumpForce = 5;
     private Rigidbody2D rigidBody;
+    private bool isFacingRight;
 
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rigidBody = GetComponent<Rigidbody2D>();
+
     }
 
     void Update()
@@ -18,12 +23,29 @@ public class Test : MonoBehaviour
         {
             rigidBody.AddForce(new Vector2(0, jumpForce));
         }*/
-        if (Input.anyKey)
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.position = rigidBody.position + new Vector2(2, 0);
+            transform.position = rigidBody.position + new Vector2(0.01f, 0);
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.position = rigidBody.position + new Vector2(-0.01f, 0);
+        }
+      
+        horizontal = Input.GetAxis("Horizontal");
+        if (horizontal < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (horizontal > 0)
+        {
+            spriteRenderer.flipX = false;
         }
 
     }
+
+
+
 
     bool IsGrounded()
     {
