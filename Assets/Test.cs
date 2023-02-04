@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Test : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private float horizontal;
-    public float jumpForce = 5;
+    public float jumpForce = 10f;
     private Rigidbody2D rigidBody;
     private bool isFacingRight;
 
@@ -41,16 +42,18 @@ public class Test : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         }
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        {
+            rigidBody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+
+        }
 
     }
 
 
-
-
     bool IsGrounded()
     {
-        // Check if the character is touching the ground
-        // ...
-        return false;
+        var val = Convert.ToString(rigidBody.transform.position.y);
+        return rigidBody.transform.position.y < -2.01f;    
     }
 }
