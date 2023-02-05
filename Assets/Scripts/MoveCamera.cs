@@ -8,11 +8,16 @@ public class MoveCamera : MonoBehaviour
     public GameObject player;
     public float cameraSpeed = 7.0f; // speed at which the camera moves
     private Vector3 cameraStartPosition; // starting position of the camera
+    private Vector3 tempPos;
+
+    [SerializeField]
+    private float minimumDistance, maximumDistance;
 
     void Start()
     {
         cameraStartPosition = transform.position;
-        player = GameObject.Find("walk_forward");
+        // player = GameObject.Find("character"); probably don't need this cause we can drop the character object to player variable in Unity
+        playerTransform = player.transform;
     }
 
     void Update()
@@ -32,5 +37,22 @@ public class MoveCamera : MonoBehaviour
 
         // keep the camera following the player's x position
         transform.position = new Vector3(player.transform.position.x, cameraStartPosition.y, cameraStartPosition.z);
+    }
+
+    void LateUpdate()
+    {
+        tempPos = transform.position;
+        tempPos.x = playerTransform.position.x;
+
+        if (tempPos.x < minimumDistance)
+        {
+            tempPos.x = minimumDistance;
+        }
+        if (tempPos.x > maximumDistance)
+        {
+            tempPos.x = maximumDistance;
+        }
+
+        transform.position = tempPos;
     }
 }
